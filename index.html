@@ -1,71 +1,86 @@
 <!-- =========================================
 FILE: index.html (HOME PAGE)
+Purpose: Introduce small-sided soccer and meet all rubric elements.
 ========================================= -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Beginner's Guide to Small-Sided Soccer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beginner's Guide to Small-Sided Soccer</title>
 </head>
 <body>
-<!-- Semantic header: contains site title and nav to page 2 -->
-<header>
-<h1>Beginner's Guide to Small-Sided Soccer (3v3-5v5)</h1>
-<p>>Small-sided soccer builds faster decision-making, more touches, and more fun—perfect for beginners.</p>
-<!-- Internal link #1: from index.html to page2.html -->
-<nav>
-<a href="page2.html">Read more on Page 2</a>
-</nav>
-</header>
+  <!-- Semantic header: contains site title and nav to page 2 -->
+  <header>
+    <h1>Beginner's Guide to Small-Sided Soccer (3v3-5v5)</h1>
+    <!-- Intent: quick hook that explains why this page matters -->
+    <p>Small-sided soccer builds faster decision-making, more touches, and more fun—perfect for beginners.</p>
 
-<main>
-<!-- Example section with two+ paragraphs; write your own content in your voice -->
-<section aria-labelledby="sec-overview">
-<h2 id="sec-overview">What Is Small-Sided Soccer?</h2>
-<p>Smallsided soccer is any competetive match with less than 11 players, typically ranging from 3v3 to 8v8 teams where the feild and goals is decreased in size. Small sided soccer aids in the development of kids aswell as the refinement of adults, forcing both groups to constantly adapt to dynamic changing game scenarios </p>
-<p>Players get far more touches on the ball than in larger scale games and are therefore exposed to more stimuli where the are forced to be creative. additionally due to smaller pitch size, players receive more touches on the ball compare to a larger scale game, aiding the development of the individuals overall ball mastery</p>
-</section>
+    <!-- Internal link #1: from index.html to page2.html -->
+    <nav aria-label="Primary">
+      <a href="page2.html">Read more on Page 2</a>
+    </nav>
+  </header>
 
+  <!-- Main content area holds the core learning content -->
+  <main>
+    <!-- Section 1: Overview with 2+ paragraphs -->
+    <section aria-labelledby="sec-overview">
+      <h2 id="sec-overview">What Is Small-Sided Soccer?</h2>
 
+      <!-- Intent: define the format clearly -->
+      <p>
+        Small-sided soccer is any competitive match with fewer than 11 players per team—typically 3v3 to 8v8—played on a smaller field with smaller goals.
+        The tighter space speeds up the game and encourages constant involvement from every player.
+      </p>
 
-<section aria-labelledby="sec-keypoints">
-<h2 id="sec-keypoints">Core Benefits at a Glance</h2>
-<!-- list of elements small sided soccer helps with -->
-<ul>
-<li>More touches and repetitions per player</li>
-<li>Faster decisions in tight spaces</li>
-<li>Inclusive, easy-to-organize games</li>
-</ul>
-</section>
+      <!-- Intent: who it's for + why it's friendly for learning -->
+      <p>
+        It's great for kids who are learning and adults who want to refine skills, because the changing situations force quick thinking and adaptable play.
+        Players get far more touches than in full-size games, which accelerates improvement in ball mastery, confidence, and decision-making.
+      </p>
+    </section>
 
+    <!-- Section 2: Unordered list of key benefits -->
+    <section aria-labelledby="sec-keypoints">
+      <h2 id="sec-keypoints">Core Benefits at a Glance</h2>
+      <!-- Intent: quick bullets that summarize advantages -->
+      <ul>
+        <li>More touches and repetitions per player</li>
+        <li>Faster decisions in tight spaces</li>
+        <li>Inclusive, easy-to-organize games</li>
+      </ul>
+    </section>
 
-<!-- Ordered list including game steps, timeline, or processes -->
-<section aria-labelledby="sec-steps">
-<h2 id="sec-steps">How to Start Your First Game (3v3)</h2>
-<ol>
-<li>Pick a format (3v3 or 4v4) and set a 20-30 m x 15-20 m field.</li>
-<li>Use small goals or cones; play two halves (e.g., 7 minutes each).</li>
-<li>Basic rules: kick-ins instead of throw-ins, no goalkeepers (optional), quick restarts.</li>
-</ol>
-</section>
+    <!-- Section 3: Ordered list for a simple setup process -->
+    <section aria-labelledby="sec-steps">
+      <h2 id="sec-steps">How to Start Your First Game (3v3)</h2>
+      <!-- Intent: provide a clear 1–2–3 setup guide -->
+      <ol>
+        <li>Pick a format (3v3 or 4v4) and set a ~20-30 m x 15-20 m field.</li>
+        <li>Use small goals or cones; play two halves (e.g., 2 x 7 minutes).</li>
+        <li>Basic rules: kick-ins instead of throw-ins; no goalkeepers (optional); quick restarts.</li>
+      </ol>
+    </section>
 
+    <!-- Section 4: Image with relative path, descriptive alt, and width -->
+    <section aria-labelledby="sec-image">
+      <h2 id="sec-image">Sample 3v3 Field Layout</h2>
+      <!-- Replace src with your actual file in /images -->
+      <img
+        src="images/3v3-field-zones.jpg"
+        alt="Top-down diagram of a 3v3 small-sided soccer field with width zones and restart spots"
+        width="400"
+      />
+      <!-- Intent: explain what the diagram is teaching -->
+      <p>This layout shows a recommended field size, how to keep width, and where to restart quickly to keep the game moving.</p>
+    </section>
+  </main>
 
-<!-- Image requirement: use a relative path like images/example.jpg -->
-<section aria-labelledby="sec-image">
-<h2 id="sec-image">Sample 3v3 Field Layout</h2>
-<!-- Replace src with your actual filename inside /images folder.
-Include descriptive alt text and set an explicit width. -->
-<img src="images/3v3-field-zones.png" alt="Top-down diagram of a 3v3 small-sided soccer field with zones marked for width and depth" width="400" />
-<p><!-- Intent: explain visual -->This diagram shows recommended field size, zones for creating width, and restart spots to keep the game moving.</p>
-</section>
-</main>
-
-
-
-<footer>
-<p>&copy; 2025 Emeka Ekwo. Beginner's reference for practice and pickup play.</p>
-<a href="page2.html">Continue to Page 2</a>
-</footer>
+  <!-- Footer with internal link repeated for convenience -->
+  <footer>
+    <p>&copy; 2025 Emeka Ekwo. Beginner's reference for practice and pickup play.</p>
+    <a href="page2.html">Continue to Page 2</a>
+  </footer>
 </body>
 </html>
