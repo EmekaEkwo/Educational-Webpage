@@ -1,0 +1,1 @@
+Place your BEFORE and AFTER accessibility screenshots here as before.png and after.png.

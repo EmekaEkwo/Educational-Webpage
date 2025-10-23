@@ -1,70 +1,62 @@
 <!-- =========================================
 FILE: page2.html (DETAILS PAGE)
-Purpose: Deeper content (skills + tips), plus lists and internal link.
+Purpose: Deeper content (skills + tips), with accessibility + responsiveness.
 ========================================= -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Skills, simple rules, and coaching tips for 3v3–5v5 small-sided soccer." />
   <title>Small-Sided Soccer: Skills, Rules & Tips</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header id="about" class="site-header">
-    <h1>Skills, Simple Rules, and Coaching Tips</h1>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-    <!-- Internal link #2: from page2.html back to index.html -->
+  <header id="about" class="site-header" role="banner">
+    <h1>Skills, Simple Rules, and Coaching Tips</h1>
     <nav aria-label="Primary">
-      <a href="index.html">Back to Home</a>
+      <ul class="nav-list">
+        <li><a href="index.html">Back to Home</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main class="container">
-    <!-- Section for deeper content, include at least two paragraphs -->
+  <main id="main" class="container" role="main">
     <section aria-labelledby="sec-deep" class="card">
-      <h2 id="sec-deep">Essential Skills for 3v3-5v5</h2>
+      <h2 id="sec-deep">Essential Skills for 3v3–5v5</h2>
 
-      <!-- Intent: teach core skills, show understanding with one example -->
       <p>
-        In small-sided soccer, a few core skills make a huge difference. Simple 1v1 moves like an inside-outside cut or a scissors feint can create just enough space to escape pressure.
+        In small-sided soccer, a few core skills make a huge difference. Simple 1v1 moves like an inside–outside cut or a scissors feint can create just enough space to escape pressure.
         A strong first touch that pushes the ball into space sets up the next action, whether that's a quick shot or a pass.
         Wall-passes, or give-and-go combinations, are especially effective because of the limited field size.
         Scanning before receiving the ball also matters—checking where defenders and teammates are saves precious seconds.
-        I remember a 3v3 game where I cut inside with an inside-outside touch, then linked up with a teammate in a wall-pass that opened space for me to slot in a shot.
-        It showed how combining simple techniques can create scoring chances.
       </p>
 
-      <!-- Intent: compare formats, bust a myth, add reflection -->
       <p>
         Compared to full-size soccer, small-sided games give beginners far more touches and decisions per minute.
         Instead of waiting on the wing for the ball, you’re constantly involved, which speeds up learning and makes the game less intimidating.
         A common myth is that you have to be extremely fast to enjoy small-sided soccer, but the reality is that smart positioning and quick passing often matter more than raw speed.
-        Personally, I noticed that my confidence grew faster in 5v5 than in 11v11 because I was always active in the play.
-        Those extra touches and chances to experiment helped me improve much more quickly than I expected.
       </p>
     </section>
 
-    <!-- Optional additional lists to reinforce requirements -->
     <section aria-labelledby="sec-extra" class="flex-row gap-lg">
       <h2 id="sec-extra">Quick Coach's Checklist</h2>
 
-      <!-- Intent: practical bullets -->
       <ul>
         <li>Keep teams small and rotate often for equal touches.</li>
         <li>Use constraints (two-touch only, must switch play before scoring) to shape decisions.</li>
       </ul>
 
-      <!-- Intent: simple 1–2 flow to run a session -->
       <ol>
-        <li>Set up: cones, small goals, timer/phone, 6-10 players.</li>
-        <li>Game flow: 2 x 7-10 minute halves, 2-minute rest, quick subs every 2-3 minutes.</li>
+        <li>Set up: cones, small goals, timer/phone, 6–10 players.</li>
+        <li>Game flow: 2 × 7–10 minute halves, 2-minute rest, quick subs every 2–3 minutes.</li>
       </ol>
     </section>
   </main>
 
-  <footer id="site-footer" class="container">
-    <!-- Intent: credit any diagrams/photos if you used them -->
+  <footer id="site-footer" class="container" role="contentinfo">
     <p>Field diagram created by me. If you reuse images, credit the source here.</p>
     <a href="index.html">Back to Home</a>
   </footer>
