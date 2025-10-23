@@ -1,16 +1,17 @@
-<!-- =========================================
+<!-- 
 FILE: page2.html (DETAILS PAGE)
-Purpose: Deeper content (skills + tips), plus lists and internal link.
-========================================= -->
+Includes: Deeper content (skills + tips), plus lists and internal link.
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Small-Sided Soccer: Skills, Rules & Tips</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
+  <header id="about" class="site-header">
     <h1>Skills, Simple Rules, and Coaching Tips</h1>
 
     <!-- Internal link #2: from page2.html back to index.html -->
@@ -19,9 +20,9 @@ Purpose: Deeper content (skills + tips), plus lists and internal link.
     </nav>
   </header>
 
-  <main>
+  <main class="container">
     <!-- Section for deeper content, include at least two paragraphs -->
-    <section aria-labelledby="sec-deep">
+    <section aria-labelledby="sec-deep" class="card">
       <h2 id="sec-deep">Essential Skills for 3v3-5v5</h2>
 
       <!-- Intent: teach core skills, show understanding with one example -->
@@ -45,7 +46,7 @@ Purpose: Deeper content (skills + tips), plus lists and internal link.
     </section>
 
     <!-- Optional additional lists to reinforce requirements -->
-    <section aria-labelledby="sec-extra">
+    <section aria-labelledby="sec-extra" class="flex-row gap-lg">
       <h2 id="sec-extra">Quick Coach's Checklist</h2>
 
       <!-- Intent: practical bullets -->
@@ -62,7 +63,7 @@ Purpose: Deeper content (skills + tips), plus lists and internal link.
     </section>
   </main>
 
-  <footer>
+  <footer id="site-footer" class="container">
     <!-- Intent: credit any diagrams/photos if you used them -->
     <p>Field diagram created by me. If you reuse images, credit the source here.</p>
     <a href="index.html">Back to Home</a>

@@ -8,10 +8,11 @@ Purpose: Introduce small-sided soccer and meet all rubric elements.
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Beginner's Guide to Small-Sided Soccer</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <!-- Semantic header: contains site title and nav to page 2 -->
-  <header>
+  <header id="hero" class="site-header">
     <h1>Beginner's Guide to Small-Sided Soccer (3v3-5v5)</h1>
     <!-- Intent: quick hook that explains why this page matters -->
     <p>Small-sided soccer builds faster decision-making, more touches, and more fun—perfect for beginners.</p>
@@ -23,9 +24,9 @@ Purpose: Introduce small-sided soccer and meet all rubric elements.
   </header>
 
   <!-- Main content area holds the core learning content -->
-  <main>
+  <main class="container">
     <!-- Section 1: Overview with 2+ paragraphs -->
-    <section aria-labelledby="sec-overview">
+    <section aria-labelledby="sec-overview" class="flex-row gap-lg">
       <h2 id="sec-overview">What Is Small-Sided Soccer?</h2>
 
       <!-- Intent: define the format clearly -->
@@ -45,7 +46,7 @@ Purpose: Introduce small-sided soccer and meet all rubric elements.
     <section aria-labelledby="sec-keypoints">
       <h2 id="sec-keypoints">Core Benefits at a Glance</h2>
       <!-- Intent: quick bullets that summarize advantages -->
-      <ul>
+      <ul class="benefits">
         <li>More touches and repetitions per player</li>
         <li>Faster decisions in tight spaces</li>
         <li>Inclusive, easy-to-organize games</li>
@@ -64,7 +65,7 @@ Purpose: Introduce small-sided soccer and meet all rubric elements.
     </section>
 
     <!-- Section 4: Image with relative path, descriptive alt, and width -->
-    <section aria-labelledby="sec-image">
+    <section aria-labelledby="sec-image" class="stack-md">
       <h2 id="sec-image">Sample 3v3 Field Layout</h2>
       <!-- Replace src with your actual file in /images -->
       <img
@@ -78,7 +79,7 @@ Purpose: Introduce small-sided soccer and meet all rubric elements.
   </main>
 
   <!-- Footer with internal link repeated for convenience -->
-  <footer>
+  <footer id="site-footer" class="container">
     <p>&copy; 2025 Emeka Ekwo. Beginner's reference for practice and pickup play.</p>
     <a href="page2.html">Continue to Page 2</a>
   </footer>
