@@ -1,4 +1,4 @@
-﻿Educational-Webpage
+Educational-Webpage
 # Beginner's Guide to Small-Sided Soccer ⚽
 
 This is a two–page educational website built with **HTML5** to demonstrate foundational front-end development skills.  
