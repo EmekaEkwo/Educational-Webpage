@@ -1,64 +1,98 @@
-<!-- =========================================
-FILE: page2.html (DETAILS PAGE)
-Purpose: Deeper content (skills + tips), with accessibility + responsiveness.
-========================================= -->
+<!-- 
+  Assignment #5 – Educational Webpage Part 4 (Bootstrap Integration)
+  Created by: Emeka Ekwo
+  This page expands on the main site with skills, rules, and coaching tips.
+  Updated to use Bootstrap grid, spacing utilities, and cleaned-up CSS.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Skills, simple rules, and coaching tips for 3v3–5v5 small-sided soccer." />
-  <title>Small-Sided Soccer: Skills, Rules & Tips</title>
+  <meta name="description" content="Skills, rules, and coaching tips for 3v3–5v5 small-sided soccer." />
+  <title>Small-Sided Soccer Skills & Tips</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
   <a class="skip-link" href="#main">Skip to main content</a>
 
-  <header id="about" class="site-header" role="banner">
-    <h1>Skills, Simple Rules, and Coaching Tips</h1>
-    <nav aria-label="Primary">
-      <ul class="nav-list">
-        <li><a href="index.html">Back to Home</a></li>
-      </ul>
-    </nav>
+  <header class="site-header border-bottom" role="banner">
+    <div class="container py-4">
+      <div class="row align-items-center gy-3">
+        <div class="col-12 col-md-8">
+          <h1 class="display-6 fw-bold">Skills, Simple Rules, and Coaching Tips</h1>
+        </div>
+        <div class="col-12 col-md-4 text-md-end">
+          <nav>
+            <a class="btn btn-outline-secondary" href="index.html">Back to Home</a>
+          </nav>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <main id="main" class="container" role="main">
-    <section aria-labelledby="sec-deep" class="card">
-      <h2 id="sec-deep">Essential Skills for 3v3–5v5</h2>
+  <main id="main" class="container my-4" role="main">
 
-      <p>
-        In small-sided soccer, a few core skills make a huge difference. Simple 1v1 moves like an inside–outside cut or a scissors feint can create just enough space to escape pressure.
-        A strong first touch that pushes the ball into space sets up the next action, whether that's a quick shot or a pass.
-        Wall-passes, or give-and-go combinations, are especially effective because of the limited field size.
-        Scanning before receiving the ball also matters—checking where defenders and teammates are saves precious seconds.
-      </p>
+    <section class="mb-4">
+      <article class="card shadow-sm">
+        <div class="card-body">
+          <h2 class="card-title h3 mb-3">Essential Skills for 3v3–5v5</h2>
 
-      <p>
-        Compared to full-size soccer, small-sided games give beginners far more touches and decisions per minute.
-        Instead of waiting on the wing for the ball, you’re constantly involved, which speeds up learning and makes the game less intimidating.
-        A common myth is that you have to be extremely fast to enjoy small-sided soccer, but the reality is that smart positioning and quick passing often matter more than raw speed.
-      </p>
+          <p>
+            Small-sided games reward players who can handle tight pressure and make decisions quickly. Simple 1v1 moves like scissors,
+            inside–outside cuts, or step-overs open up space. A clean first touch sets up passes or shots. Quick wall-passes (give-and-go)
+            are especially effective when space is limited. Scanning before receiving the ball saves time and reduces turnovers.
+          </p>
+
+          <p>
+            Beginners improve rapidly because participation is constant. You don’t hide on the field—you’re always involved.
+            Instead of waiting for the ball, you’re making choices every few seconds. This builds confidence, awareness,
+            and the understanding of when to dribble, pass, or shoot.
+          </p>
+        </div>
+      </article>
     </section>
 
-    <section aria-labelledby="sec-extra" class="flex-row gap-lg">
-      <h2 id="sec-extra">Quick Coach's Checklist</h2>
+    <section class="mb-4">
+      <div class="row gy-3">
+        <div class="col-12 col-md-6">
+          <h2 class="h3 mb-3">Quick Coach's Checklist</h2>
+          <ul class="ps-3">
+            <li>Rotate players often to keep the pace high.</li>
+            <li>Use constraints (e.g., two-touch, must switch play) to shape learning.</li>
+            <li>Reward creativity and ideas, not just goals.</li>
+          </ul>
+        </div>
 
-      <ul>
-        <li>Keep teams small and rotate often for equal touches.</li>
-        <li>Use constraints (two-touch only, must switch play before scoring) to shape decisions.</li>
-      </ul>
-
-      <ol>
-        <li>Set up: cones, small goals, timer/phone, 6–10 players.</li>
-        <li>Game flow: 2 × 7–10 minute halves, 2-minute rest, quick subs every 2–3 minutes.</li>
-      </ol>
+        <div class="col-12 col-md-6">
+          <h3 class="h4 mb-3">Simple Game Flow Template</h3>
+          <ol class="ps-3">
+            <li>Setup: cones, small goals, timer, 6–10 players.</li>
+            <li>Format: 2 × 7–10 minute halves.</li>
+            <li>Subs: rotate every 2–3 minutes.</li>
+            <li>Debrief: ask players one takeaway before leaving.</li>
+          </ol>
+        </div>
+      </div>
     </section>
+
   </main>
 
-  <footer id="site-footer" class="container" role="contentinfo">
-    <p>Field diagram created by me. If you reuse images, credit the source here.</p>
-    <a href="index.html">Back to Home</a>
+  <footer class="border-top py-3 mt-4" role="contentinfo">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <p class="mb-0 small text-muted">Field diagram created by me.</p>
+      <a class="btn btn-outline-secondary btn-sm" href="index.html">Back to Home</a>
+    </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

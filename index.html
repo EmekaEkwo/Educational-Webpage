@@ -1,8 +1,10 @@
-<!-- =========================================
-FILE: index.html (HOME PAGE)
-Purpose: Introduce small-sided soccer and meet accessibility + responsiveness requirements.
-Assignment #4 changes highlighted in comments.
-========================================= -->
+<!-- 
+  Assignment #5 – Educational Webpage Part 4 (Bootstrap Integration)
+  Created by: Emeka Ekwo
+  This file includes the Bootstrap setup, updated layout structure,
+  and refactored content for my small-sided soccer educational webpage.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,78 +12,115 @@ Assignment #4 changes highlighted in comments.
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Beginner-friendly guide to small-sided soccer (3v3–5v5): what it is, benefits, setup steps, and coaching tips." />
   <title>Beginner's Guide to Small-Sided Soccer</title>
+
+  <!-- Bootstrap CSS (linked ABOVE custom CSS) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Custom styles that sit on top of Bootstrap -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <!-- A11y addition #1: Skip link to jump past repeated navigation -->
+  <!-- Skip link stays for accessibility -->
   <a class="skip-link" href="#main">Skip to main content</a>
 
-  <!-- Semantic header: contains site title and nav to page 2 -->
-  <header id="hero" class="site-header" role="banner">
-    <h1>Beginner's Guide to Small-Sided Soccer (3v3–5v5)</h1>
-    <p>Small-sided soccer builds faster decision-making, more touches, and more fun—perfect for beginners.</p>
-
-    <!-- A11y addition #2: nav has an aria-label and meaningful link text -->
-    <nav aria-label="Primary">
-      <ul class="nav-list">
-        <li><a href="page2.html">Skills, rules & coaching tips (Page 2)</a></li>
-      </ul>
-    </nav>
+  <!-- Header / hero section -->
+  <header id="hero" class="site-header border-bottom" role="banner">
+    <div class="container py-4">
+      <div class="row align-items-center gy-3">
+        <div class="col-12 col-lg-8">
+          <h1 class="display-5 fw-bold">
+            Beginner's Guide to Small-Sided Soccer (3v3–5v5)
+          </h1>
+          <p class="lead text-muted mb-3">
+            Small-sided soccer builds faster decision-making, more touches, and more fun—perfect for beginners.
+          </p>
+        </div>
+        <div class="col-12 col-lg-4">
+          <nav aria-label="Primary">
+            <ul class="nav justify-content-lg-end flex-lg-column nav-pills">
+              <li class="nav-item mb-2 mb-lg-2">
+                <a class="nav-link btn btn-primary text-white"
+                  href="page2.html">
+                  Skills, rules &amp; coaching tips (Page 2)
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <!-- Main content area holds the core learning content -->
-  <main id="main" class="container" role="main">
-    <!-- Section 1: Overview with 2+ paragraphs -->
-    <section aria-labelledby="sec-overview" class="flex-row gap-lg">
-      <h2 id="sec-overview">What Is Small-Sided Soccer?</h2>
-
-      <p>
-        Small-sided soccer is any competitive match with fewer than 11 players per team—typically 3v3 to 8v8—played on a smaller field with smaller goals.
-        The tighter space speeds up the game and encourages constant involvement from every player.
-      </p>
-
-      <p>
-        It's great for kids who are learning and adults who want to refine skills, because the changing situations force quick thinking and adaptable play.
-        Players get far more touches than in full-size games, which accelerates improvement in ball mastery, confidence, and decision-making.
-      </p>
+  <!-- Main content -->
+  <main id="main" class="container my-4" role="main">
+    <section aria-labelledby="sec-overview" class="mb-4">
+      <div class="row gy-3">
+        <div class="col-12 col-lg-10">
+          <h2 id="sec-overview" class="h2 mb-3">What Is Small-Sided Soccer?</h2>
+          <p>
+            Small-sided soccer is any competitive match with fewer than 11 players per team—typically 3v3 to 8v8—played on a smaller field with smaller goals.
+            The tighter space speeds up the game and encourages constant involvement.
+          </p>
+          <p>
+            It's great for kids who are learning and adults who want to develop quicker because the changing situations force fast decisions. 
+            You get more touches, more pressure, and more problem-solving than in full-size matches, which accelerates improvement in ball mastery and confidence.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <!-- Section 2: Unordered list of key benefits -->
-    <section aria-labelledby="sec-keypoints">
-      <h2 id="sec-keypoints">Core Benefits at a Glance</h2>
-      <ul class="benefits">
+    <section aria-labelledby="sec-keypoints" class="mb-4">
+      <h2 id="sec-keypoints" class="h2 mb-3">Core Benefits at a Glance</h2>
+      <ul class="benefits ps-3">
         <li>More touches and repetitions per player</li>
-        <li>Faster decisions in tight spaces</li>
+        <li>Faster decision-making in tight spaces</li>
         <li>Inclusive, easy-to-organize games</li>
       </ul>
     </section>
 
-    <!-- Section 3: Ordered list for a simple setup process -->
-    <section aria-labelledby="sec-steps">
-      <h2 id="sec-steps">How to Start Your First Game (3v3)</h2>
-      <ol>
-        <li>Pick a format (3v3 or 4v4) and set a ~20–30 m × 15–20 m field.</li>
-        <li>Use small goals or cones; play two halves (e.g., 2 × 7 minutes).</li>
-        <li>Basic rules: kick-ins instead of throw-ins; no goalkeepers (optional); quick restarts.</li>
+    <section aria-labelledby="sec-steps" class="mb-4">
+      <h2 id="sec-steps" class="h2 mb-3">How to Start Your First Game (3v3)</h2>
+      <ol class="ps-3">
+        <li>Pick a format and set a small field (20–30m × 15–20m).</li>
+        <li>Use small goals or cones; play short, intense halves.</li>
+        <li>Kick-ins instead of throw-ins; optional no goalkeeper; quick restarts.</li>
       </ol>
     </section>
 
-    <!-- Section 4: Image with descriptive alt and explicit width -->
-    <section aria-labelledby="sec-image" class="stack-md">
-      <h2 id="sec-image">Sample 3v3 Field Layout</h2>
-      <img
-        src="images/3v3-field-zones.jpg"
-        alt="Top-down diagram of a 3v3 small-sided soccer field with width zones and restart spots"
-        width="400"
-      />
-      <p>This layout shows a recommended field size, how to keep width, and where to restart quickly to keep the game moving.</p>
+    <section aria-labelledby="sec-image" class="mb-4">
+      <h2 id="sec-image" class="h2 mb-3">Sample 3v3 Field Layout</h2>
+      <div class="row gy-3">
+        <div class="col-12 col-md-6">
+          <img
+            src="images/3v3-field-zones.jpg"
+            class="img-fluid rounded shadow-sm"
+            alt="Diagram of a 3v3 field with width zones"
+          />
+        </div>
+        <div class="col-12 col-md-6">
+          <p>
+            This basic field map shows ideal spacing for a 3v3 setup. You don't need fancy equipment—cones, a flat field, and a few players are enough.
+          </p>
+        </div>
+      </div>
     </section>
   </main>
 
-  <!-- Footer with internal link repeated -->
-  <footer id="site-footer" class="container" role="contentinfo">
-    <p>&copy; 2025 Emeka Ekwo. Beginner's reference for practice and pickup play.</p>
-    <a href="page2.html">Continue to skills & tips (Page 2)</a>
+  <footer id="site-footer" class="border-top py-3 mt-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <p class="mb-0 small text-muted">
+        &copy; 2025 Emeka Ekwo. Beginner's reference for practice and pickup play.
+      </p>
+      <a class="btn btn-outline-secondary btn-sm" href="page2.html">
+        Continue to skills & tips (Page 2)
+      </a>
+    </div>
   </footer>
+
+  <!-- Bootstrap JS bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
